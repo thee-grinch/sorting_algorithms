@@ -18,8 +18,8 @@ void quick_sort(int *array, size_t size)
 /**
 * quicksort_recursive - Recursive function to perform Quick sort
 * @array: The array to be sorted
-* @start: The low index of the partition
-* @end: The high index of the partition
+* @start: The start index of the partition
+* @end: The end index of the partition
 * @size: Number of elements in the array
 */
 void quicksort_recursive(int *array, int start, int end, size_t size)
@@ -38,9 +38,8 @@ void quicksort_recursive(int *array, int start, int end, size_t size)
 /**
 * lomuto_partition - Lomuto partition scheme for Quick sort
 * @array: The array to be partitioned
-* @start: The low index of the partition
-* @end: The high index of the partition
-* @size: Number of elements in the array
+* @start: The start index of the partition
+* @end: The end index of the partition
 * Return: The pivot index
 */
 int lomuto_partition(int *array, int start, int end)
